@@ -14,5 +14,35 @@ public class Inheritance {
 
     }
 
+    class Grandparent {              //MultiLevel Inheritance
+
+        void message() {
+
+            System.out.println("I am the grandparent.");
+
+        }
+
+    }
+
+    class Parent extends Grandparent {
+
+        void message() {
+
+            System.out.println("I am the parent.");
+
+        }
+
+    }
+
+    class Child extends Parent {
+
+        void message() {
+
+            System.out.println("I am the child.");
+
+        }
+
+    }
+
 
 }
